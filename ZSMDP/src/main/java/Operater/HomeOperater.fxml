@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="586.0" prefWidth="971.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Operater.HomeOperaterControl">
+   <children>
+      <BorderPane prefHeight="586.0" prefWidth="977.0">
+         <top>
+            <Pane prefHeight="71.0" prefWidth="977.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="obavjestenjeBtn" layoutX="893.0" layoutY="8.0" mnemonicParsing="false" onAction="#obavjestenjeBtnClick" prefHeight="55.0" prefWidth="61.0" text="Obavještenje" />
+                  <Button fx:id="rasporedBtn" layoutX="24.0" layoutY="23.0" mnemonicParsing="false" onAction="#rasporedBtnClick" prefHeight="26.0" prefWidth="137.0" text="Pregled rasporeda" />
+               </children>
+            </Pane>
+         </top>
+         <bottom>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <buttons>
+                <Button fx:id="izlazBtn" mnemonicParsing="false" onAction="#izlazBtnClick" text="Izlaz" />
+              </buttons>
+               <BorderPane.margin>
+                  <Insets left="20.0" right="20.0" />
+               </BorderPane.margin>
+            </ButtonBar>
+         </bottom>
+         <left>
+            <Pane prefHeight="475.0" prefWidth="216.0" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <Pane prefHeight="475.0" prefWidth="327.0" BorderPane.alignment="CENTER" />
+         </right>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXComboBox fx:id="staniceCombo" layoutX="14.0" layoutY="14.0" onAction="#staniceComboClick" prefHeight="30.0" prefWidth="121.0" promptText="Stanice" />
+                  <VBox fx:id="chatContainer" layoutX="25.0" layoutY="56.0" prefHeight="406.0" prefWidth="95.0" />
+                  <TabPane fx:id="chatTab" layoutX="153.0" layoutY="14.0" prefHeight="449.0" prefWidth="271.0" tabClosingPolicy="UNAVAILABLE" />
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
