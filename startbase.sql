@@ -12,4 +12,8 @@ call czsmdp.dodajKorisnika('Korisnik2', '5d5023553fe89252bcd1a18558fbaa968748731
 call czsmdp.dodajKorisnika('Korisnik3', '5ed7f08ae9e68cf7f04c00b1dda8b34e394c75eaa7a203a742e7ba8690b95fe33f4e3cb615b8ea80c94f1a4c26a21febdbc461f74f40b45fb4544d9919081fdf', 'operater', 'Banja Luka');
 call czsmdp.dodajKorisnika('Korisnik4', 'a86b9765fd3cf80715a19aed648767502e6025b8fd3f3ccb15728106bb1722d5e94aedd3e971cf3186cbcd329fb98120d8aeb0be5e234554a8541ace55f7faa1', 'operater', 'Prijedor');
 
-call czsmdp.dodajLiniju('Prijedor', 'Banja Luka', 'Gradiška Sanski Most');
+call czsmdp.dodajLiniju('Prijedor', 'Jajce');
+call czsmdp.dodajStanke('Gradiška', '12:00:00');
+call czsmdp.dodajStanke('Banja Luka', '13:00:00');
+
+
