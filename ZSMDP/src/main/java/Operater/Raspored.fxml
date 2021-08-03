@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane prefHeight="420.0" prefWidth="712.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Operater.RasporedControl">
+   <children>
+      <BorderPane prefHeight="420.0" prefWidth="712.0">
+         <left>
+            <TableView fx:id="linijaTable" prefHeight="420.0" prefWidth="499.0" BorderPane.alignment="CENTER">
+               <columns>
+                  <TableColumn fx:id="idColumn" prefWidth="66.0" text="ID" />
+                  <TableColumn fx:id="startColumn" prefWidth="75.0" text="Start" />
+                  <TableColumn fx:id="stankaColumn" prefWidth="265.0" text="Stanke" />
+                  <TableColumn fx:id="stopColumn" prefWidth="92.0" text="Stop" />
+               </columns>
+            </TableView>
+         </left>
+         <right>
+            <TableView fx:id="detailLinijaTable" prefHeight="420.0" prefWidth="196.0" BorderPane.alignment="CENTER">
+               <columns>
+                  <TableColumn fx:id="stankaColumnDetail" prefWidth="104.0" text="Stanka" />
+                  <TableColumn fx:id="vrijemeColumn" prefWidth="95.0" text="Vrijeme" />
+               </columns>
+            </TableView>
+         </right>
+         <bottom>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <buttons>
+                <Button fx:id="izlazBtn" mnemonicParsing="false" text="Izlaz" />
+              </buttons>
+               <padding>
+                  <Insets right="5.0" />
+               </padding>
+            </ButtonBar>
+         </bottom>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </BorderPane>
+   </children>
+</AnchorPane>

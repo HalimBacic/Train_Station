@@ -1,5 +1,4 @@
-
-
+select * from `stanica`;
 call czsmdp.dodajStanicu('Gradiška');
 call czsmdp.dodajStanicu('Banja Luka');
 call czsmdp.dodajStanicu('Prijedor');
@@ -16,4 +15,5 @@ call czsmdp.dodajLiniju('Prijedor', 'Jajce');
 call czsmdp.dodajStanke('Gradiška', '12:00:00');
 call czsmdp.dodajStanke('Banja Luka', '13:00:00');
 
-
+call czsmdp.vratiLogin('admin');
+call sveLinije();

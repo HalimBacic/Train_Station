@@ -4,16 +4,14 @@ import java.net.URL;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
-
-import items.Linija;
-import items.Stanica;
+import Items.Linija;
+import Items.Stanica;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.ComboBox;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TableColumn;
@@ -181,7 +179,7 @@ public class LinijaControl implements Initializable {
 				startCombo.setText(firstItem.getText());
 				dodajLinijuAktiviraj();
 			});
-			startCombo.getItems().add(new MenuItem(stanica.getIme()));
+			startCombo.getItems().add(firstItem);
 			
 			MenuItem middleItem = new MenuItem(stanica.getIme());
 			middleItem.setOnAction(event->{

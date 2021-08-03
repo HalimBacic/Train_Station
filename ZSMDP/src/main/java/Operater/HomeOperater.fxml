@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.jfoenix.controls.JFXComboBox?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
@@ -32,7 +33,7 @@
             </ButtonBar>
          </bottom>
          <left>
-            <Pane prefHeight="475.0" prefWidth="216.0" BorderPane.alignment="CENTER" />
+            <Pane prefHeight="496.0" prefWidth="216.0" BorderPane.alignment="CENTER" />
          </left>
          <right>
             <Pane prefHeight="475.0" prefWidth="327.0" BorderPane.alignment="CENTER" />
@@ -40,9 +41,14 @@
          <center>
             <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <JFXComboBox fx:id="staniceCombo" layoutX="14.0" layoutY="14.0" onAction="#staniceComboClick" prefHeight="30.0" prefWidth="121.0" promptText="Stanice" />
-                  <VBox fx:id="chatContainer" layoutX="25.0" layoutY="56.0" prefHeight="406.0" prefWidth="95.0" />
+                  <VBox fx:id="chatContainer" layoutX="16.0" layoutY="57.0" prefHeight="406.0" prefWidth="95.0" />
                   <TabPane fx:id="chatTab" layoutX="153.0" layoutY="14.0" prefHeight="449.0" prefWidth="271.0" tabClosingPolicy="UNAVAILABLE" />
+                  <MenuButton fx:id="staniceCombo" layoutX="23.0" layoutY="14.0" mnemonicParsing="false" text="Stanice">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Action 1" />
+                      <MenuItem mnemonicParsing="false" text="Action 2" />
+                    </items>
+                  </MenuButton>
                </children>
             </Pane>
          </center>

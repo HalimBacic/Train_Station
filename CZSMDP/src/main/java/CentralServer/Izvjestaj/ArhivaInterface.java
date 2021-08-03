@@ -4,7 +4,7 @@ import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
 
-import items.Korisnik;
+import Items.Korisnik;
 import javafx.scene.layout.AnchorPane;
 
 public interface ArhivaInterface extends Remote{

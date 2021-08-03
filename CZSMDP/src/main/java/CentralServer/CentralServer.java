@@ -4,11 +4,11 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.util.Properties;
-import items.Connection;
-import items.Korisnik;
-import items.Linija;
-import items.MdpUtility;
-import items.Stanica;
+import Items.Connection;
+import Items.Korisnik;
+import Items.Linija;
+import Items.MdpUtility;
+import Items.Stanica;
 
 public class CentralServer {
 	private static boolean isWorking = true;
