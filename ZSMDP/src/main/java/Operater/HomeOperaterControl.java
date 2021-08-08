@@ -9,6 +9,7 @@ import java.util.ArrayList;
 import java.util.ResourceBundle;
 import Items.Stanica;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -97,14 +98,21 @@ public class HomeOperaterControl implements Initializable {
 		
 		for (Stanica stn : staniceArrayList) {
 			MenuItem menuItem = new MenuItem(stn.getIme());
-			menuItem.setOnAction(event->{
-				try {
-					initializeActiveOperaters(stn.getIme());
-				} catch (SQLException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+			final String name = stn.getIme();
+			menuItem.setOnAction(new EventHandler<ActionEvent>() {
+
+				@Override
+				public void handle(ActionEvent arg0) {
+					try {
+						initializeActiveOperaters(name);
+					} catch (SQLException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}				
 				}
 			});
+					
+		
 			staniceCombo.getItems().add(menuItem);
 		}
 	}

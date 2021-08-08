@@ -1,0 +1,21 @@
+.mybutton
+{
+	-fx-background-color: #294936;
+	-fx-font-family: "Gill Sans MT, sans-serif";
+	-fx-text-fill:white;
+	-fx-font-weight:bold;
+	-fx-border-color:#212922;
+    -fx-border-width: 2.4;
+    -fx-background-insets: 0;
+}
+
+.menu
+{
+	-fx-background-color:#92140C;
+}
+
+.mybutton:hover
+{
+	-fx-cursor:hand;
+	-fx-border-color:#9DD9D2;
+}

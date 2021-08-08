@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="475.0" prefWidth="408.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CentralServer.Izvjestaj.IzvjestajiControl">
+   <children>
+      <VBox layoutX="-8.0" prefHeight="475.0" prefWidth="408.0">
+         <children>
+            <Pane prefHeight="98.0" prefWidth="386.0">
+               <children>
+                  <TextField fx:id="traziTF" layoutX="43.0" layoutY="28.0" prefHeight="34.0" prefWidth="257.0" promptText="Traži" />
+                  <Button fx:id="traziBtn" layoutX="324.0" layoutY="32.0" mnemonicParsing="false" onAction="#traziBtnClick" text="Traži" />
+               </children>
+            </Pane>
+            <ScrollPane fx:id="scrollPane" prefHeight="364.0" prefWidth="408.0">
+               <content>
+                  <VBox fx:id="boxContainter" prefHeight="513.0" prefWidth="368.0" />
+               </content>
+            </ScrollPane>
+            <ButtonBar prefHeight="66.0" prefWidth="348.0">
+              <buttons>
+                <Button fx:id="izlazBtn" mnemonicParsing="false" onAction="#izlazBtnClick" text="Izlaz" />
+              </buttons>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </ButtonBar>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

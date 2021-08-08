@@ -32,5 +32,14 @@ public class MdpUtility {
 		
 		return properties;
 	}
+	
+	public static void ShowAlert(String msgType,String msg)
+	{
+		Alert alert = new Alert(AlertType.WARNING);
+		alert.setTitle("Warning");
+		alert.setHeaderText(msgType);
+		alert.setContentText(msg);
+		alert.showAndWait();
+	}
 
 }

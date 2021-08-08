@@ -8,11 +8,9 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/PDFBox"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFX"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JFoenixLibrary"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/MySQL"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/PdfBox"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/SimpleJSON"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JSONSimple"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/SimpleXML"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

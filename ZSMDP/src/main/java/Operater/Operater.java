@@ -17,8 +17,8 @@ public class Operater extends Application {
 	
 	@Override
 	public void start(Stage stage) throws IOException {		
-	        Parent root = FXMLLoader.load(getClass().getResource("HomeOperater.fxml"));   
-	        Scene scene = new Scene(root, 971, 586);
+	        Parent root = FXMLLoader.load(getClass().getResource("LoginKorisnik.fxml"));   
+	        Scene scene = new Scene(root,349, 180);
 	        stage.setTitle("ZSMDP");
 	        stage.setScene(scene);
 	        stage.show();

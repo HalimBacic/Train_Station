@@ -22,11 +22,8 @@ import org.apache.pdfbox.pdmodel.font.PDType1Font;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-//import CentralServer.Izvjestaj.IzvjestajiItemControl;
 import items.Korisnik;
 import items.MdpUtility;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.layout.AnchorPane;
 
 public class Arhiva implements ArhivaInterface {
 
